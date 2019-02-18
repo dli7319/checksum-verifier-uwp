@@ -5,7 +5,7 @@ Inspired by https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
 
 Screenshots
 --------------------------------
-![Screenshot1](/Readme_Assets/Screenshot1.png?raw=true =100x20)
+![Screenshot1](Readme_Assets/Screenshot1.png?raw=true =100x20)
 
 TODO (For Robel)
 --------------------------------
