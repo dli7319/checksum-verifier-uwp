@@ -39,27 +39,78 @@ void ::ChecksumVerifier::MainPage::Connect(int __connectionId, ::Platform::Objec
             break;
         case 3:
             {
+                this->sha512Checkbox = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->sha512Checkbox))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::ChecksumVerifier::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::sha512Checkbox_Click);
+            }
+            break;
+        case 4:
+            {
+                this->sha512Text = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            }
+            break;
+        case 5:
+            {
+                this->sha512CopyButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            }
+            break;
+        case 6:
+            {
+                this->sha256Checkbox = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->sha256Checkbox))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::ChecksumVerifier::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::sha256Checkbox_Click);
+            }
+            break;
+        case 7:
+            {
+                this->sha256Text = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            }
+            break;
+        case 8:
+            {
+                this->sha256CopyButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            }
+            break;
+        case 9:
+            {
+                this->sha1Checkbox = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->sha1Checkbox))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::ChecksumVerifier::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::sha1CheckboxClick);
+            }
+            break;
+        case 10:
+            {
+                this->sha1Text = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            }
+            break;
+        case 11:
+            {
+                this->sha1CopyButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            }
+            break;
+        case 12:
+            {
                 this->md5Checkbox = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->md5Checkbox))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::ChecksumVerifier::MainPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::md5CheckboxClick);
             }
             break;
-        case 4:
+        case 13:
             {
                 this->md5Text = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
             }
             break;
-        case 5:
+        case 14:
             {
                 this->md5CopyButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             }
             break;
-        case 6:
+        case 15:
             {
                 this->filePathText = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
             }
             break;
-        case 7:
+        case 16:
             {
                 this->fileBrowseButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->fileBrowseButton))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::ChecksumVerifier::MainPage::*)

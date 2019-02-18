@@ -21,5 +21,12 @@ namespace ChecksumVerifier
 		void FileBrowseClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void GenerateChecksums(Windows::Storage::StorageFile^ file);
 		void md5CheckboxClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void sha1CheckboxClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void sha256Checkbox_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void sha512Checkbox_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		Platform::String^ getMD5Checksum(unsigned char* data, int dataLength);
+		Platform::String^ getSHA1Checksum(unsigned char* data, int dataLength);
+		Platform::String^ getSHA256Checksum(unsigned char* data, int dataLength);
+		Platform::String^ getSHA512Checksum(unsigned char* data, int dataLength);
 	};
 }

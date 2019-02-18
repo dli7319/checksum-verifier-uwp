@@ -37,6 +37,15 @@ namespace ChecksumVerifier
     
         private: ::Windows::UI::Xaml::Controls::StackPanel^ contentPanel;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ checksumsPanel;
+        private: ::Windows::UI::Xaml::Controls::CheckBox^ sha512Checkbox;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ sha512Text;
+        private: ::Windows::UI::Xaml::Controls::Button^ sha512CopyButton;
+        private: ::Windows::UI::Xaml::Controls::CheckBox^ sha256Checkbox;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ sha256Text;
+        private: ::Windows::UI::Xaml::Controls::Button^ sha256CopyButton;
+        private: ::Windows::UI::Xaml::Controls::CheckBox^ sha1Checkbox;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ sha1Text;
+        private: ::Windows::UI::Xaml::Controls::Button^ sha1CopyButton;
         private: ::Windows::UI::Xaml::Controls::CheckBox^ md5Checkbox;
         private: ::Windows::UI::Xaml::Controls::TextBox^ md5Text;
         private: ::Windows::UI::Xaml::Controls::Button^ md5CopyButton;

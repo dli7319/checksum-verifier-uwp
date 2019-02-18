@@ -1,0 +1,7 @@
+# Build Results
+x64/
+x86/
+Debug/
+
+# Visual Studio 2017 Options
+.vs/

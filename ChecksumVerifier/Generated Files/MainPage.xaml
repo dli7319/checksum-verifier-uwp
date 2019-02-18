@@ -15,14 +15,32 @@
                 <StackPanel Orientation="Horizontal" Width="Auto">
                     <TextBlock Width="120"/>
                     <TextBlock Text="File" Width="100"/>
-                    <TextBox x:ConnectionId='6' x:Name="filePathText" PlaceholderText="File Path" Width="600"/>
-                    <Button x:ConnectionId='7' x:Name="fileBrowseButton" Content="Browse" Width="100"                        />
+                    <TextBox x:ConnectionId='15' x:Name="filePathText" PlaceholderText="File Path" Width="600"/>
+                    <Button x:ConnectionId='16' x:Name="fileBrowseButton" Content="Browse" Width="100"                        />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Width="1440">
-                    <CheckBox x:ConnectionId='3' x:Name="md5Checkbox" IsChecked="True"                         />
+                    <CheckBox x:ConnectionId='12' x:Name="md5Checkbox" IsChecked="True"                         />
                     <TextBlock Text="MD5" Width="100"/>
-                    <TextBox x:ConnectionId='4' x:Name="md5Text" PlaceholderText="MD5 Checksum" Width="600"/>
-                    <Button x:ConnectionId='5' x:Name="md5CopyButton" Content="Copy" Width="100"/>
+                    <TextBox x:ConnectionId='13' x:Name="md5Text" PlaceholderText="MD5 Checksum" Width="600" IsReadOnly="True"/>
+                    <Button x:ConnectionId='14' x:Name="md5CopyButton" Content="Copy" Width="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="1440">
+                    <CheckBox x:ConnectionId='9' x:Name="sha1Checkbox" IsChecked="True"                          />
+                    <TextBlock Text="SHA1" Width="100"/>
+                    <TextBox x:ConnectionId='10' x:Name="sha1Text" PlaceholderText="SHA1 Checksum" Width="600" IsReadOnly="True"/>
+                    <Button x:ConnectionId='11' x:Name="sha1CopyButton" Content="Copy" Width="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="1440">
+                    <CheckBox x:ConnectionId='6' x:Name="sha256Checkbox" IsChecked="True"                             />
+                    <TextBlock Text="SHA256" Width="100"/>
+                    <TextBox x:ConnectionId='7' x:Name="sha256Text" PlaceholderText="SHA256 Checksum" Width="600" IsReadOnly="True"/>
+                    <Button x:ConnectionId='8' x:Name="sha256CopyButton" Content="Copy" Width="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Width="1440">
+                    <CheckBox x:ConnectionId='3' x:Name="sha512Checkbox" IsChecked="True"                             />
+                    <TextBlock Text="SHA512" Width="100"/>
+                    <TextBox x:ConnectionId='4' x:Name="sha512Text" PlaceholderText="SHA512 Checksum" Width="600" IsReadOnly="True"/>
+                    <Button x:ConnectionId='5' x:Name="sha512CopyButton" Content="Copy" Width="100"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
