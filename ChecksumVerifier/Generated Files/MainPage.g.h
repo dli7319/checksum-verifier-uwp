@@ -7,6 +7,18 @@
 //------------------------------------------------------------------------------
 
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class StackPanel;
+                ref class CheckBox;
+                ref class TextBox;
+                ref class Button;
+            }
+        }
+    }
+}
 
 namespace ChecksumVerifier
 {
@@ -23,6 +35,13 @@ namespace ChecksumVerifier
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Controls::StackPanel^ contentPanel;
+        private: ::Windows::UI::Xaml::Controls::StackPanel^ checksumsPanel;
+        private: ::Windows::UI::Xaml::Controls::CheckBox^ md5Checkbox;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ md5Text;
+        private: ::Windows::UI::Xaml::Controls::Button^ md5CopyButton;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ filePathText;
+        private: ::Windows::UI::Xaml::Controls::Button^ fileBrowseButton;
     };
 }
 

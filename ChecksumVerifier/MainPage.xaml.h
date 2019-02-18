@@ -17,5 +17,9 @@ namespace ChecksumVerifier
 	public:
 		MainPage();
 
+	private:
+		void FileBrowseClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void GenerateChecksums(Windows::Storage::StorageFile^ file);
+		void md5CheckboxClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }
