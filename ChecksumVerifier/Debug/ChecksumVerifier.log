@@ -1,4 +1,0 @@
-﻿  App.xaml.cpp
-  MainPage.xaml.cpp
-c:\users\dli73\source\repos\checksumverifier\checksumverifier\mainpage.xaml.cpp(122): error C2084: function 'Platform::String ^ChecksumVerifier::MainPage::getSHA1Checksum(unsigned char *,int)' already has a body
-  c:\users\dli73\source\repos\checksumverifier\checksumverifier\mainpage.xaml.cpp(106): note: see previous definition of 'getSHA1Checksum'
