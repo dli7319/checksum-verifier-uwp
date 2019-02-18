@@ -67,20 +67,26 @@ void ChecksumVerifier::MainPage::GenerateChecksums(StorageFile^ file)
 
 				if (md5Checkbox->IsChecked->Value) {
 					md5Text->Text = getMD5Checksum(byteArr, buffer->Length);
+				} else {
+					md5Text->Text = "";
 				}
 				if (sha1Checkbox->IsChecked->Value) {
 					sha1Text->Text = getSHA1Checksum(byteArr, buffer->Length);
+				} else {
+					sha1Text->Text = "";
 				}
 				if (sha256Checkbox->IsChecked->Value) {
 					sha256Text->Text = getSHA256Checksum(byteArr, buffer->Length);
+				} else {
+					sha256Text->Text = "";
 				}
 				if (sha512Checkbox->IsChecked->Value) {
 					sha512Text->Text = getSHA512Checksum(byteArr, buffer->Length);
+				} else {
+					sha512Text->Text = "";
 				}
 
-
-
-
+							   
 				delete byteArr;
 				delete dataReader;
 
