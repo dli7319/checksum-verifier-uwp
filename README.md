@@ -17,7 +17,3 @@ TODO (For Robel)
 * Write to file (MD5SUMS, SHA1SUMS)
 * Read from file (MD5SUMS, SHA1SUMS)
 * Update Screenshots with all the above
-
-<style>
-img[alt=Screenshot1] { width: 50rem; }
-</style>
