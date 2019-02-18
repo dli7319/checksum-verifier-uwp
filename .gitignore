@@ -3,5 +3,8 @@ x64/
 x86/
 Debug/
 
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
 # Visual Studio 2017 Options
 .vs/
