@@ -20,4 +20,5 @@ TODO (For Robel)
 * Folder support
 * Write to file (MD5SUMS, SHA1SUMS)
 * Read from file (MD5SUMS, SHA1SUMS)
+* Cloud support - Check with known hashes on a database to automatically verify common files
 * Update Screenshots with all the above
