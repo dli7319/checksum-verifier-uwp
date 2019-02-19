@@ -9,10 +9,14 @@ Screenshots
 
 TODO (For Robel)
 --------------------------------
-* Fix memory leaks
+* Add actions to click/unclick checkboxes and copy/paste
+  * Due March 1
+* Fix memory leaks. (Stop reading the whole file into memory)
+  * Due March 15
 * Multithreaded computation (stop blocking main thread)
-* Add actions to click/unclick checkboxes
-* Tabbed UI
+  * Due March 22
+* Tabbed UI with About Page and Link to Robel's Website
+  * Due March 29
 * Folder support
 * Write to file (MD5SUMS, SHA1SUMS)
 * Read from file (MD5SUMS, SHA1SUMS)
