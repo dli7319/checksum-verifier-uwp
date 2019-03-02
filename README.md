@@ -21,4 +21,5 @@ TODO (For Robel)
 * Write to file (MD5SUMS, SHA1SUMS)
 * Read from file (MD5SUMS, SHA1SUMS)
 * Cloud support - Check with known hashes on a database to automatically verify common files
+* GPG Checks
 * Update Screenshots with all the above
