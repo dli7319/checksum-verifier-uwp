@@ -28,5 +28,6 @@ namespace ChecksumVerifier
 		Platform::String^ getSHA1Checksum(unsigned char* data, int dataLength);
 		Platform::String^ getSHA256Checksum(unsigned char* data, int dataLength);
 		Platform::String^ getSHA512Checksum(unsigned char* data, int dataLength);
+		void pasteButtonClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

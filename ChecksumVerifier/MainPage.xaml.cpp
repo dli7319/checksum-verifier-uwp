@@ -24,6 +24,8 @@ using namespace Windows::UI::Xaml::Navigation;
 using namespace Windows::Storage;
 using namespace Windows::Storage::Pickers;
 using namespace Windows::Storage::Streams;
+using namespace Windows::ApplicationModel;
+using namespace Windows::ApplicationModel::DataTransfer;
 
 MainPage::MainPage()
 {
@@ -181,4 +183,25 @@ void ChecksumVerifier::MainPage::sha256Checkbox_Click(Platform::Object^ sender, 
 void ChecksumVerifier::MainPage::sha512Checkbox_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 
+}
+
+
+void ChecksumVerifier::MainPage::pasteButtonClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	DataPackageView^ dataPackageView = DataTransfer::Clipboard::GetContent();
+	if (dataPackageView->Contains(StandardDataFormats::Text))
+	{
+		create_task(dataPackageView->GetTextAsync()).then(
+			[this](task<String^> textTask)
+		{
+			try
+			{
+				pasteChecksumInput->Text = textTask.get();
+			}
+			catch (Exception^ ex)
+			{
+
+			}
+		});
+	}
 }
