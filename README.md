@@ -9,13 +9,11 @@ Screenshots
 
 Upcoming Features
 --------------------------------
-* Add actions to click/unclick checkboxes and copy/paste
-* Fix memory leaks. (Stop reading the whole file into memory)
-* Multithreaded computation (stop blocking main thread)
-* Tabbed UI with About Page and Link to Robel's Website
-* Folder support
-* Write to file (MD5SUMS, SHA1SUMS)
-* Read from file (MD5SUMS, SHA1SUMS)
-* Cloud support - Check with known hashes on a database to automatically verify common files
-* GPG Checks
-* Update Screenshots with all the above
+* Add actions to click/unclick checkboxes and copy/paste.
+* Multithreaded support.
+* Folder support.
+* Write to file (MD5SUMS, SHA1SUMS).
+* Read from file (MD5SUMS, SHA1SUMS).
+* Cloud support - Check with known hashes on a database to automatically verify common ISOs.
+* GPG Checks.
+* Reduce memory usage.
